@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  mysql:
+    build: ./mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: openml
+
+  website:
+    build: ./
+    ports:
+      - 3000:80
+    volumes: 
+      - ./website:/var/www/html
+    depends_on:
+      - mysql
