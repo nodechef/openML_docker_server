@@ -2,9 +2,9 @@
 Server for OPENML website
 
 ## Installation:
-
-Clone the repository and simply run 
-**docker-compose up** in your terminal. Docker must be running.
+1. Run Docker
+2. Clone the repository and simply run **docker-compose up** in your terminal.
+3. Visit Localhost:3000
 
 OpenML: Open Machine Learning
 =============================
@@ -26,7 +26,3 @@ learning and data mining.
 ## How does it work?
 OpenML works much like a data mining challenge platform, such as Kaggle, except that solutions are constructed collaboratively, with anybody free to build on other people's work, instead of a competition setting, where all progress is kept secret.
 
-
-
-
-Visit Localhost:3000
